@@ -1,0 +1,18 @@
+digraph "dirlookup"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="dirlookup",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="namecmp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d2/d5a/fs_8c.html#ae74f6e5b19a4e7f3e72807ee67141819",tooltip=" "];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="strncmp",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d5/d64/defs_8h.html#a27e878168063a98eae64b4273dcf33cc",tooltip=" "];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="panic",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d0/d56/console_8c.html#a95c0aca5d6d7487933984f08b189917a",tooltip=" "];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="readi",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d2/d5a/fs_8c.html#a3aba1fa9f6789d09356aec5b96d91fa8",tooltip=" "];
+  Node5 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="bread",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dc/de6/bio_8c.html#ae000984516278965dde3d125affd086c",tooltip=" "];
+}

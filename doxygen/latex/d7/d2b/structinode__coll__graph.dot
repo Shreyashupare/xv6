@@ -1,0 +1,32 @@
+digraph "inode"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="inode",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" lock" ];
+  Node2 [label="sleeplock",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d9/dd0/structsleeplock.html",tooltip=" "];
+  Node3 -> Node2 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" lk" ];
+  Node3 [label="spinlock",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d1/d08/structspinlock.html",tooltip=" "];
+  Node4 -> Node3 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" cpu" ];
+  Node4 [label="cpu",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$db/d62/structcpu.html",tooltip=" "];
+  Node5 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" gdt" ];
+  Node5 [label="segdesc",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d8/d3e/structsegdesc.html",tooltip=" "];
+  Node6 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" scheduler" ];
+  Node6 [label="context",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d7/dfe/structcontext.html",tooltip=" "];
+  Node7 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" proc" ];
+  Node7 [label="proc",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$de/d48/structproc.html",tooltip=" "];
+  Node1 -> Node7 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" cwd" ];
+  Node6 -> Node7 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" context" ];
+  Node8 -> Node7 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" tf" ];
+  Node8 [label="trapframe",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$df/d05/structtrapframe.html",tooltip=" "];
+  Node7 -> Node7 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" parent" ];
+  Node9 -> Node7 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" ofile" ];
+  Node9 [label="file",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d7/d3a/structfile.html",tooltip=" "];
+  Node1 -> Node9 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" ip" ];
+  Node10 -> Node9 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" pipe" ];
+  Node10 [label="pipe",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d8/d53/structpipe.html",tooltip=" "];
+  Node3 -> Node10 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" lock" ];
+  Node11 -> Node4 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" ts" ];
+  Node11 [label="taskstate",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dc/dd1/structtaskstate.html",tooltip=" "];
+}

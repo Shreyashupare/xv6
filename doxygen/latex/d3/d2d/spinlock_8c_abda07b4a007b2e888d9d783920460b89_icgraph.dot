@@ -1,0 +1,37 @@
+digraph "initlock"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="initlock",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="binit",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d5/d64/defs_8h.html#a53cca0ddc98c5f1de37124eca2575a59",tooltip=" "];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="consoleinit",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d5/d64/defs_8h.html#ab508ff0f4db26fe35cd25fa648f9ee75",tooltip=" "];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="fileinit",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d6/d13/file_8c.html#a66bb5a4b304ea0f851dd999fc8195fa4",tooltip=" "];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="ideinit",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d9/d2f/ide_8c.html#aefb190a6104cb58c0bc1f8fec88d1307",tooltip=" "];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="iinit",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d2/d5a/fs_8c.html#a301761a27cf266e0bad483272fb31a3c",tooltip=" "];
+  Node6 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node7 [label="forkret",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d3/dda/proc_8c.html#a11c5d62d28e8121e75235d361158156e",tooltip=" "];
+  Node1 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node8 [label="initlog",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d7/df8/log_8c.html#ad5e79aaefb91f41b9ef6aeae7ecf4708",tooltip=" "];
+  Node8 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node1 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node9 [label="initsleeplock",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d8/dd1/sleeplock_8c.html#aaa5746f0a7ae0071b2916be5fdedf4ab",tooltip=" "];
+  Node9 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node9 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node1 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node10 [label="kinit1",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d4/def/kalloc_8c.html#a596c07f040e83fd8ea1857f36ffab4fb",tooltip=" "];
+  Node1 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node11 [label="pinit",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d3/dda/proc_8c.html#a9d293f913985937ee7a266fe5ddbfc77",tooltip=" "];
+  Node1 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node12 [label="pipealloc",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d1/d47/pipe_8c.html#a9d6f0c526148e6002b6776619c7563e6",tooltip=" "];
+  Node12 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node13 [label="sys_pipe",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d1/d14/sysfile_8c.html#a9a70db941def46ec25939e6c2d30e399",tooltip=" "];
+  Node1 -> Node14 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node14 [label="tvinit",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dc/d6f/trap_8c.html#a9e7167b8e20e217c4af4e757f612ba6a",tooltip=" "];
+}

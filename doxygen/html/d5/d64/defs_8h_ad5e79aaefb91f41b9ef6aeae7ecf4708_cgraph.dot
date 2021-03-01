@@ -1,0 +1,57 @@
+digraph "initlog"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="initlog",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="initlock",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d5/d64/defs_8h.html#ab56d728e6966819a0260c358d3ac3419",tooltip=" "];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="panic",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d0/d56/console_8c.html#a95c0aca5d6d7487933984f08b189917a",tooltip=" "];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="readsb",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d5/d64/defs_8h.html#aff0080b2133027be2e525ca088b40e78",tooltip=" "];
+  Node4 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="bread",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dc/de6/bio_8c.html#ae000984516278965dde3d125affd086c",tooltip=" "];
+  Node4 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="brelse",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dc/de6/bio_8c.html#ab5335aeb503731104314321a78a6d727",tooltip=" "];
+  Node6 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="acquire",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d5/d64/defs_8h.html#afe4ef8638f1ecb962a6e67fb086ee3b8",tooltip=" "];
+  Node7 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="holding",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d3/d2d/spinlock_8c.html#aea48df3e5cfb903179ad3dc78ab502d9",tooltip=" "];
+  Node8 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="mycpu",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d5/d64/defs_8h.html#a6ab45dc363c8d9b7beb14c25be49c6d7",tooltip=" "];
+  Node8 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="popcli",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d3/d2d/spinlock_8c.html#ae3424f669269fef400ce29c3aeb43fdb",tooltip=" "];
+  Node8 -> Node11 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="pushcli",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d3/d2d/spinlock_8c.html#a206b749d1b7768dadce61cbcde7e0f1c",tooltip=" "];
+  Node7 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 -> Node11 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 -> Node12 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="holdingsleep",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d5/d64/defs_8h.html#afa76133bc67c6026376d630da9b53b68",tooltip=" "];
+  Node12 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 -> Node13 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="myproc",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d5/d64/defs_8h.html#addb64b689e3c266aaa67cc0126bba441",tooltip=" "];
+  Node13 -> Node14 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 [label="mycpu",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d3/dda/proc_8c.html#a6ab45dc363c8d9b7beb14c25be49c6d7",tooltip=" "];
+  Node13 -> Node15 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node15 [label="popcli",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d5/d64/defs_8h.html#ae3424f669269fef400ce29c3aeb43fdb",tooltip=" "];
+  Node13 -> Node16 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node16 [label="pushcli",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d5/d64/defs_8h.html#a206b749d1b7768dadce61cbcde7e0f1c",tooltip=" "];
+  Node12 -> Node17 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node17 [label="release",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d5/d64/defs_8h.html#a4f8616948f3dbce65671f666eed1d669",tooltip=" "];
+  Node17 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node17 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node17 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 -> Node17 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 -> Node18 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node18 [label="releasesleep",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d5/d64/defs_8h.html#a840b479c87b1c047d7142f58e0ad0b27",tooltip=" "];
+  Node18 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node18 -> Node17 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node18 -> Node19 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node19 [label="wakeup",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d5/d64/defs_8h.html#a245b56417239f499389b2e806bd99254",tooltip=" "];
+  Node19 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 -> Node20 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node20 [label="memmove",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d5/d64/defs_8h.html#aa9c8577c0e9d233f85892ec2d9bfe212",tooltip=" "];
+}

@@ -1,0 +1,29 @@
+digraph "sleeplock.h"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="sleeplock.h",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="bio.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$dc/de6/bio_8c.html",tooltip=" "];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="console.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d0/d56/console_8c.html",tooltip=" "];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="file.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d6/d13/file_8c.html",tooltip=" "];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="fs.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d2/d5a/fs_8c.html",tooltip=" "];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="ide.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d9/d2f/ide_8c.html",tooltip=" "];
+  Node1 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node7 [label="log.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d7/df8/log_8c.html",tooltip=" "];
+  Node1 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node8 [label="memide.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$da/d9b/memide_8c.html",tooltip=" "];
+  Node1 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node9 [label="pipe.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d1/d47/pipe_8c.html",tooltip=" "];
+  Node1 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node10 [label="sleeplock.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d8/dd1/sleeplock_8c.html",tooltip=" "];
+  Node1 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node11 [label="sysfile.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d1/d14/sysfile_8c.html",tooltip=" "];
+  Node1 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node12 [label="uart.c",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d1/d87/uart_8c.html",tooltip=" "];
+}

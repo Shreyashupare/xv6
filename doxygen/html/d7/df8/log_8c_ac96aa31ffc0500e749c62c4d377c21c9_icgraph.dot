@@ -1,0 +1,30 @@
+digraph "begin_op"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="begin_op",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="exec",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d8/ddb/user_8h.html#aa7b4aae4a12acd187e23396214aeca47",tooltip=" "];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="fileclose",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d6/d13/file_8c.html#ae557c81ab89c24219146144bb6adaa2c",tooltip=" "];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="pipealloc",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d1/d47/pipe_8c.html#a9d6f0c526148e6002b6776619c7563e6",tooltip=" "];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="sys_pipe",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d1/d14/sysfile_8c.html#a9a70db941def46ec25939e6c2d30e399",tooltip=" "];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="filewrite",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d6/d13/file_8c.html#ab8de757a0a9f58dcc6511ea5e46ebb88",tooltip=" "];
+  Node1 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="sys_chdir",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d1/d14/sysfile_8c.html#ad1c5f8693cb35b9605fee09eebdda640",tooltip=" "];
+  Node1 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="sys_link",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d1/d14/sysfile_8c.html#a759600870314007ac558871239122fb7",tooltip=" "];
+  Node1 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="sys_mkdir",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d1/d14/sysfile_8c.html#a057e5bce2de7a87ebfd2dc33967bca4a",tooltip=" "];
+  Node1 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="sys_mknod",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d1/d14/sysfile_8c.html#a25697aa3d828b5878d38170d724adb27",tooltip=" "];
+  Node1 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="sys_open",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d1/d14/sysfile_8c.html#a74e45efc661ca17c068bc283b3842e6d",tooltip=" "];
+  Node1 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="sys_unlink",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d1/d14/sysfile_8c.html#ae1e58ee11d41f643929520d8c1640da7",tooltip=" "];
+}
