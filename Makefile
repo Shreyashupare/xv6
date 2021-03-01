@@ -34,10 +34,6 @@ OBJS = \
 # Using native tools (e.g., on X86 Linux)
 #TOOLPREFIX = 
 
-#added by me because qemu prompt is not popping up after make qemu ( shreyas )
-qemu -serial mon:stdio -drive file=fs.img,index=1,media=disk,format=raw -drive file=xv6.img,index=0,media=disk,format=raw -smp 2 -m 512 
-
-
 # Try to infer the correct TOOLPREFIX if not set
 ifndef TOOLPREFIX
 TOOLPREFIX := $(shell if i386-jos-elf-objdump -i 2>&1 | grep '^elf32-i386$$' >/dev/null 2>&1; \
@@ -55,10 +51,8 @@ TOOLPREFIX := $(shell if i386-jos-elf-objdump -i 2>&1 | grep '^elf32-i386$$' >/d
 endif
 
 # If the makefile can't find QEMU, specify its path here
-# QEMU = qemu-system-i386
-#below line is added date 15 feb 2021
+#QEMU = qemu-system-i386
 QEMU = qemu-system-x86_64
-
 # Try to infer the correct QEMU
 ifndef QEMU
 QEMU = $(shell if which qemu > /dev/null; \
